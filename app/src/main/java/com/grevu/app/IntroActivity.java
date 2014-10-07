@@ -1,4 +1,4 @@
-package com.grevu.intro;
+package com.grevu.app;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;

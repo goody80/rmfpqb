@@ -1,4 +1,4 @@
-package com.grevu.intro;
+package com.grevu.app;
 
 import android.content.Intent;
 import android.os.Bundle;
