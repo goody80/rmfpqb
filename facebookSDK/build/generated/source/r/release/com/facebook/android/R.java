@@ -191,7 +191,7 @@ containing a value of this type.
         public static int com_facebook_list_section_header_background=0x7f02000d;
         public static int com_facebook_loginbutton_silver=0x7f02000e;
         public static int com_facebook_logo=0x7f02000f;
-        public static int com_facebook_picker_default_separator_color=0x7f020020;
+        public static int com_facebook_picker_default_separator_color=0x7f020021;
         public static int com_facebook_picker_item_background=0x7f020010;
         public static int com_facebook_picker_list_focused=0x7f020011;
         public static int com_facebook_picker_list_longpressed=0x7f020012;
@@ -208,6 +208,7 @@ containing a value of this type.
         public static int com_facebook_top_background=0x7f02001d;
         public static int com_facebook_top_button=0x7f02001e;
         public static int com_facebook_usersettingsfragment_background_gradient=0x7f02001f;
+        public static int frontpage_icon_fb=0x7f020020;
     }
     public static final class id {
         public static int com_facebook_login_activity_progress_bar=0x7f050005;
@@ -279,8 +280,9 @@ containing a value of this type.
         public static int com_facebook_usersettingsfragment_not_logged_in=0x7f070018;
     }
     public static final class style {
-        public static int com_facebook_loginview_default_style=0x7f080000;
-        public static int com_facebook_loginview_silver_style=0x7f080001;
+        public static int com_facebook_loginview_circle_style=0x7f080000;
+        public static int com_facebook_loginview_default_style=0x7f080001;
+        public static int com_facebook_loginview_silver_style=0x7f080002;
     }
     public static final class styleable {
         /** Attributes that can be used with a com_facebook_friend_picker_fragment.

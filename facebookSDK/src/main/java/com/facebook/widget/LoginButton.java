@@ -215,9 +215,11 @@ public class LoginButton extends Button {
                 // cannot use a drawable in edit mode, so setting the background color instead
                 // of a background resource.
                 this.setBackgroundColor(getResources().getColor(R.color.com_facebook_blue));
+                //this.setBackgroundResource(R.drawable.frontpage_icon_fb);
                 // hardcoding in edit mode as getResources().getString() doesn't seem to work in IntelliJ
                 loginText = "Log in with Facebook";
             } else {
+                //this.setBackgroundResource(R.drawable.frontpage_icon_fb);
                 this.setBackgroundResource(R.drawable.com_facebook_button_blue);
                 this.setCompoundDrawablesWithIntrinsicBounds(R.drawable.com_facebook_inverse_icon, 0, 0, 0);
                 this.setCompoundDrawablePadding(
@@ -528,7 +530,7 @@ public class LoginButton extends Button {
 
     private void finishInit() {
         setOnClickListener(new LoginClickListener());
-        setButtonText();
+        //setButtonText();
         if (!isInEditMode()) {
             sessionTracker = new SessionTracker(getContext(), new LoginButtonCallback(), null, false);
             fetchUserInfo();

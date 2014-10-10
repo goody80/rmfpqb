@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
-import com.facebook.widget.LoginButton;
 
 /**
  * Created by jhkim on 2014-10-01.
@@ -32,10 +31,12 @@ public class FacebookFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_intro, container, false);
 
-        LoginButton btn_facebook = (LoginButton) view.findViewById(R.id.btn_facebook);
-        btn_facebook.setFragment(this);
+
+        View view = inflater.inflate(R.layout.activity_login, container, false);
+
+//        LoginButton btn_facebook = (LoginButton) view.findViewById(R.id.btn_facebook);
+//        btn_facebook.setFragment(this);
         //authButton.setReadPermissions(Arrays.asList("user_likes", "user_status"));
 
         return view;
