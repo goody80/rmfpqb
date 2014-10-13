@@ -15,6 +15,7 @@ public class LoginActivity extends FragmentActivity {
 
     private FacebookFragment facebookFragment;
     private ImageView btn_twitter;
+    private ImageView btn_grevu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,15 @@ public class LoginActivity extends FragmentActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_grevu = (ImageView) findViewById(R.id.btn_grevu);
+        btn_grevu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, GrevuMapActivity.class);
                 startActivity(intent);
             }
         });
