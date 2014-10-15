@@ -1,23 +1,28 @@
-apply plugin: 'com.android.library'
+apply plugin: 'android-library'
+
+dependencies {
+    compile 'com.android.support:support-v4:20.0.+'
+    compile 'com.parse.bolts:bolts-android:1.1.2'
+}
 
 android {
     compileSdkVersion 18
-    buildToolsVersion "20.0.0"
+    buildToolsVersion '19.1.0'
 
     defaultConfig {
-        applicationId "com.facebook.android"
-        minSdkVersion 8
-        targetSdkVersion 8
+        minSdkVersion Integer.parseInt(project.ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
     }
 
-    buildTypes {
-        release {
-            runProguard false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
         }
     }
-}
-
-dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
 }
