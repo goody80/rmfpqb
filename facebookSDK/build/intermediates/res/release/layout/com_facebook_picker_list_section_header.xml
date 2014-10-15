@@ -18,7 +18,7 @@
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/com_facebook_picker_list_section_header"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textStyle="bold"
     android:background="@drawable/com_facebook_list_section_header_background"
@@ -32,4 +32,4 @@
     android:shadowDy="1"
     android:shadowRadius="1"
     android:shadowColor="#BFFFFFFF" />
-<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/src/main/res/layout/com_facebook_picker_list_section_header.xml -->
+<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_list_section_header.xml -->

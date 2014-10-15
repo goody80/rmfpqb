@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
     <ProgressBar android:indeterminate="true"
                  android:layout_width="wrap_content"
@@ -13,4 +13,4 @@
                  android:indeterminateOnly="true"
             />
 </RelativeLayout>
-<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/src/main/res/layout/com_facebook_login_activity_layout.xml -->
+<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_login_activity_layout.xml -->

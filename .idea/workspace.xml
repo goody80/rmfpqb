@@ -7,14 +7,20 @@
         <option name="packageNamePattern" value="com.grevu.grevu" />
       </filter>
       <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="" />
         <option name="name" value="app: com.grevu.app" />
         <option name="packageNamePattern" value="com.grevu.app" />
+        <option name="pid" value="" />
       </filter>
     </filters>
   </component>
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState />
+      <GlobalState>
+        <option name="visible" value="false" />
+      </GlobalState>
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -40,45 +46,193 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.grevu.app" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e76684d-aec7-409b-8605-30f09162414b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/libDaumMapAndroid.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi/libDaumMapEngineApi.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/jniLibs/armeabi-v7a/libDaumMapEngineApi.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebookSDK/build/generated/source/buildConfig/test/debug/com/facebook/android/test/BuildConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/constant/GrevuContstants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/GrevuMapActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/Logger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebookSDK/build/generated/source/r/test/debug/com/facebook/android/test/R.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/SystemUiHider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/SystemUiHiderBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/SystemUiHiderHoneycomb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_grevu_map.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libDaumMapAndroid.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmfpqb.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+    <list default="true" id="6e76684d-aec7-409b-8605-30f09162414b" name="Default" comment="1) facebookSDK 변경&#10;2) facebook 로그인/로그아웃">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/FacebookFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/GrevuMapActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/LoginActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/build/generated/source/buildConfig/test/debug/com/facebook/android/test/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/build/generated/source/r/test/debug/com/facebook/android/test/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/AccessToken.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/AccessTokenSource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/AppEventsConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/AppEventsLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/AppLinkData.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/AuthorizationClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookAuthorizationException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookDialogException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookGraphObjectException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookOperationCanceledException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookRequestError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookSdkVersion.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/FacebookServiceException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/GetTokenClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/HttpMethod.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/InsightsLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/LegacyHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/LoggingBehavior.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/LoginActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/NativeAppCallAttachmentStore.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/NativeAppCallContentProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/NonCachingTokenCachingStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/Request.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/RequestAsyncTask.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/RequestBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/Response.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/Session.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/SessionDefaultAudience.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/SessionLoginBehavior.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/SessionState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/Settings.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/SharedPreferencesTokenCachingStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/TestSession.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/TokenCachingStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/UiLifecycleHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/android/AsyncFacebookRunner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/android/DialogError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/android/Facebook.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/android/FacebookError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/android/FbDialog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/android/Util.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/AnalyticsEvents.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/CacheableRequestBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/FileLruCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/ImageDownloader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/ImageRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/ImageResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/ImageResponseCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/Logger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/NativeProtocol.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/PlatformServiceClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/ServerProtocol.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/SessionAuthorizationType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/SessionTracker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/UrlRedirectCache.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/Utility.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/Validate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/WorkQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/internal/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/CreateGraphObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/GraphLocation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/GraphMultiResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/GraphObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/GraphObjectList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/GraphPlace.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/GraphUser.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/JsonUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/OpenGraphAction.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/OpenGraphObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/model/PropertyName.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/FacebookDialog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/FacebookFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/FriendPickerFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/GraphObjectAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/GraphObjectCursor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/GraphObjectPagingLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/LoginButton.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/PickerFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/PlacePickerFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/ProfilePictureView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/SimpleGraphObjectCursor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/UserSettingsFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/WebDialog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_button_blue_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_button_blue_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_button_blue_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_button_grey_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_button_grey_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_button_grey_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_inverse_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-hdpi/com_facebook_picker_magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-ldpi/com_facebook_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-mdpi/com_facebook_button_blue_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-mdpi/com_facebook_button_blue_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-mdpi/com_facebook_button_blue_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-mdpi/com_facebook_inverse_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-mdpi/com_facebook_picker_magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_button_blue_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_button_blue_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_inverse_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable-xhdpi/com_facebook_picker_magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_blue.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_blue_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_blue_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_blue_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_check.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_check_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_check_on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_grey_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_grey_normal.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_button_grey_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_inverse_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_list_divider.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_list_section_header_background.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_loginbutton_silver.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_item_background.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_list_focused.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_list_longpressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_list_pressed.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_list_selector.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_list_selector_background_transition.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_list_selector_disabled.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_picker_top_button.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_place_default_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_profile_default_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_profile_picture_blank_portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_profile_picture_blank_square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_top_background.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_top_button.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/drawable/frontpage_icon_fb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_friendpickerfragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_login_activity_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_activity_circle_row.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_checkbox.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_image.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_list_row.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_list_section_header.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_search_box.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_title_bar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_picker_title_bar_stub.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_placepickerfragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_placepickerfragment_list_row.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_search_bar_layout.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/layout/com_facebook_usersettingsfragment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-es/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-hdpi/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-he/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-iw/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-ldpi/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-mdpi/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values-xhdpi/dimens.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values/attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values/colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values/drawables.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values/strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/facebookSDK/src/main/res/values/styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grevu.jks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/grevu.keystore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" afterPath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_20_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_20_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_20_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitter4j-core-4.0.2/twitter4j-core-4.0.2.iml" afterPath="$PROJECT_DIR$/twitter4j-core-4.0.2/twitter4j-core-4.0.2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Grevu.iws" />
@@ -133,8 +287,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -142,61 +296,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
+              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+              <folding>
+                <element signature="e#1345#1361#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/view/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39917696" vertical-offset="376" max-vertical-offset="1110">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntroActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1905">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrevuContstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/constant/GrevuContstants.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/Logger.java">
+      <file leaf-file-name="FacebookFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/view/FacebookFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="1875">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/DataUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UiLifecycleHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/facebookSDK/src/com/facebook/UiLifecycleHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2626" max-vertical-offset="4845">
+              <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="CategoryActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="375">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="1005">
+              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+              <folding>
+                <element signature="e#1068#2590#0" expanded="true" />
+                <element signature="e#1273#2564#0" expanded="true" />
+                <element signature="e#1607#2498#0" expanded="true" />
+                <element signature="e#2468#2469#0" expanded="true" />
+                <element signature="e#2545#2546#0" expanded="true" />
+                <element signature="e#2579#2580#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <file leaf-file-name="Looper.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/android-sdks/platforms/android-20/android.jar!/android/os/Looper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rmfpqb.iml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rmfpqb.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="375">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -233,7 +432,7 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="rmfpqb" />
+              <option name="name" value="Grevu" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
@@ -244,16 +443,16 @@
                 <option name="path" value="$PROJECT_DIR$/app" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
+                <option name="name" value="Grevu" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
                 <option name="name" value=":facebookSDK" />
                 <option name="path" value="$PROJECT_DIR$/facebookSDK" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":twitter4j-core-4.0.2" />
                 <option name="path" value="$PROJECT_DIR$/twitter4j-core-4.0.2" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value="rmfpqb" />
-                <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -488,11 +687,6 @@
                 <option name="name" value="lintRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs lint on just the fatal issues in the Release build" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="lintVitalRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAssets" />
               </ExternalTaskPojo>
@@ -570,13 +764,13 @@
                 <option name="name" value="prepareDebugTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare Grevu:facebookSDK:unspecified" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareReleaseDependencies" />
+                <option name="name" value="prepareGrevuFacebookSDKUnspecifiedLibrary" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare rmfpqb:facebookSDK:unspecified" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareRmfpqbFacebookSDKUnspecifiedLibrary" />
+                <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1069,7 +1263,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="7065666113000" />
+        <entry key="$PROJECT_DIR$" value="7064695147000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1223,10 +1417,10 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/28b7614b908a47844bb27e3c94b45b6893656265/bcpkix-jdk15on-1.48.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/cbbbe556e0103ceb734ac7a269ecb9a9e2f33d4c/builder-0.12.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/3673e1c415b054caccc3231dcdff959cfcb315f6/builder-0.12.2.jar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0-sources.jar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0.aar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0-sources.jar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0-sources.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0.aar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0-sources.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar" />
                             <option value="$MODULE_DIR$/libs/libDaumMapAndroid.jar" />
                           </list>
                         </option>
@@ -1303,10 +1497,12 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/28b7614b908a47844bb27e3c94b45b6893656265/bcpkix-jdk15on-1.48.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/cbbbe556e0103ceb734ac7a269ecb9a9e2f33d4c/builder-0.12.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/0.12.2/3673e1c415b054caccc3231dcdff959cfcb315f6/builder-0.12.2.jar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0-sources.jar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0.aar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0-sources.jar" />
-                            <option value="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0-sources.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-v4/20.0.0/support-v4-20.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/aef813279b878e900b49165b1f6b0f91c7d50e5e/bolts-android-1.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0-sources.jar" />
+                            <option value="$USER_HOME$/android-sdks/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/facebookSDK" />
@@ -1492,30 +1688,39 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/FacebookFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/slide_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/view/IntroBackgroundView.java" />
         <option value="$PROJECT_DIR$/facebookSDK/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/slide_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/com/grevu/app/constant/GrevuContstants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_grevu_map.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/Logger.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/GrevuMapActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/constant/GrevuContstants.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/map/GrevuMapActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml" />
+        <option value="$PROJECT_DIR$/facebookSDK/project.properties" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/facebookSDK/build.gradle" />
+        <option value="$PROJECT_DIR$/facebookSDK/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/DataUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/view/FacebookFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/grevu/app/view/LoginActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="58" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="722" />
+    <option name="width" value="1382" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1543,9 +1748,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1560,7 +1765,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemId" value="Grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1570,29 +1775,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemId" value="Grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebookSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebookSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1602,23 +1789,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemId" value="Grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebookSDK" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="generated" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1628,39 +1811,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemId" value="Grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebookSDK" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="generated" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r" />
+              <option name="myItemId" value="grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="debug" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1670,49 +1845,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemId" value="Grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebookSDK" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="generated" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemId" value="grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebookSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1722,15 +1879,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Grevu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grevu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="rmfpqb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grevu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="intermediates" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grevu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmfpqb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Grevu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1749,7 +1974,7 @@
     <property name="project.structure.last.edited" value="Android SDK" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="LGV5005acd6ac7" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0682e7060061ac0d" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="257" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="259" />
@@ -1766,30 +1991,48 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1057" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Lpreview" />
+    <property name="DEBUGGABLE_DEVICE" value="lge-nexus_5-0682e7060061ac0d" />
+    <property name="DEBUGGABLE_PROCESS" value="com.grevu.app" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/jhkim/Desktop/develop/Grevu/settings.gradle" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/facebookSDK/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/jniLibs" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
       <recent name="D:\jhkim\workspace\Grevu\app\src\main\res\drawable-xhdpi" />
-      <recent name="D:\jhkim\workspace\Grevu\facebookSDK\src\main\res\drawable" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.grevu.app" />
       <recent name="com.grevu.grevu" />
     </key>
-    <key name="android.template.parentActivityClass">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.grevu.app" />
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+    <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -1964,35 +2207,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="722" extended-state="6" />
+    <frame x="58" y="22" width="1382" height="878" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32875606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.509901" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32545933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328084" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39895013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43569553" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24925373" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.509901" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28217822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24925373" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.507874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43569553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32390952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32388058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32545933" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.211838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2021,191 +2264,16 @@
     <MESSAGE value="로그인 화면 레이아웃 수정" />
     <MESSAGE value="1) daum 지도 library 추가 및 소스 수정&#10;2) build.gradle package name 수정 : com.grevu.grevu로 되어 있었음" />
     <MESSAGE value="1) daum 지도 library 추가 및 소스 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="1) daum 지도 library 추가 및 소스 수정" />
+    <MESSAGE value="1) facebookSDK 변경&#10;2) facebook 로그인/로그아웃" />
+    <option name="LAST_COMMIT_MESSAGE" value="1) facebookSDK 변경&#10;2) facebook 로그인/로그아웃" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/FacebookFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/LoginButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1273#1519#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1622#1864#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/FacebookFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/LoginButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/app_icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/res/values/drawables.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/frontpage_icon_gv.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/frontpage_icon_logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/res/drawable/frontpage_icon_fb.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -2220,29 +2288,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/java/com/facebook/widget/LoginButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/slide_up.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/category_bg.png">
@@ -2250,37 +2303,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/view/IntroBackgroundView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/FacebookFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="360">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2292,92 +2318,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_grevu_map.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16853933" vertical-offset="255" max-vertical-offset="705">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="e#291#326#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+    <entry file="file://$PROJECT_DIR$/rmfpqb.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="375">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_intro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="390">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5185184" vertical-offset="547" max-vertical-offset="975">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/map/GrevuMapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14117648" vertical-offset="0" max-vertical-offset="1185">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding>
-            <element signature="e#1273#1519#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1622#1864#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_grevu_map.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16853933" vertical-offset="255" max-vertical-offset="705">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="e#291#326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22874807" vertical-offset="178" max-vertical-offset="825">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/GrevuMapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16228747" vertical-offset="435" max-vertical-offset="2460">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        <state vertical-scroll-proportion="2.7093024" vertical-offset="1070" max-vertical-offset="2475">
+          <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.872093" vertical-offset="0" max-vertical-offset="675">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/SystemUiHider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="2640">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/SystemUiHiderBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2390,28 +2400,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/Logger.java">
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-18/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17355">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebookSDK/build/generated/source/r/release/com/facebook/android/R.java">
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-20/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2727273" vertical-offset="525" max-vertical-offset="9525">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35045#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.79136693" vertical-offset="0" max-vertical-offset="18120">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-18/android.jar!/android/app/Instrumentation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1526" max-vertical-offset="2400">
+          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/src/com/facebook/AccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="6135">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16149068" vertical-offset="98" max-vertical-offset="420">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5050505" vertical-offset="0" max-vertical-offset="585">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.148148" vertical-offset="494" max-vertical-offset="975">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.778098" vertical-offset="0" max-vertical-offset="540">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4491018" vertical-offset="960" max-vertical-offset="1335">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1560">
+          <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-1.12-all/2apkk7d25miauqf1pdjp1bm0uo/gradle-1.12/src/core/org/gradle/api/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.3897367" vertical-offset="0" max-vertical-offset="21660">
+          <caret line="251" column="6" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/src/com/facebook/widget/LoginButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.181818" vertical-offset="11270" max-vertical-offset="12300">
+          <caret line="799" column="29" selection-start-line="799" selection-start-column="29" selection-end-line="799" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -2419,16 +2542,154 @@
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmfpqb.iml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_category.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875" vertical-offset="0" max-vertical-offset="375">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="435" max-vertical-offset="915">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-18/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8955224" vertical-offset="0" max-vertical-offset="555">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/src/com/facebook/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="24476" max-vertical-offset="35385">
+          <caret line="1665" column="60" selection-start-line="1665" selection-start-column="60" selection-end-line="1665" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar!/android/support/v4/app/FragmentActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2" vertical-offset="1145" max-vertical-offset="1875">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-20/android.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5171" max-vertical-offset="6675">
+          <caret line="355" column="16" selection-start-line="355" selection-start-column="16" selection-end-line="355" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-20/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="1245">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android-sdks/platforms/android-20/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar!/android/support/v4/app/FragmentManagerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33163264" vertical-offset="1340" max-vertical-offset="3045">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebookSDK/src/com/facebook/UiLifecycleHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2626" max-vertical-offset="4845">
+          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/IntroActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1905">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="825">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+          <folding>
+            <element signature="e#1345#1361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/util/DataUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/view/FacebookFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="1875">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/category/CategoryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="1005">
+          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
+          <folding>
+            <element signature="e#1068#2590#0" expanded="true" />
+            <element signature="e#1273#2564#0" expanded="true" />
+            <element signature="e#1607#2498#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/grevu/app/view/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39917696" vertical-offset="376" max-vertical-offset="1110">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

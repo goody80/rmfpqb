@@ -25,4 +25,4 @@
     <item
             android:drawable="@drawable/com_facebook_top_background" />
 </selector>
-<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/src/main/res/drawable/com_facebook_top_button.xml -->
+<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_top_button.xml -->

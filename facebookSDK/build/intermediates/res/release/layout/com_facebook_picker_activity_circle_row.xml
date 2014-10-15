@@ -18,7 +18,7 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="50dip"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         >
     <ProgressBar android:indeterminate="true"
                  android:layout_width="wrap_content"
@@ -30,4 +30,4 @@
                  android:indeterminateOnly="true"
             />
 </RelativeLayout>
-<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/src/main/res/layout/com_facebook_picker_activity_circle_row.xml -->
+<!-- From: file:/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_activity_circle_row.xml -->
