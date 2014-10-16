@@ -16,8 +16,6 @@ import com.grevu.app.R;
 import com.grevu.app.view.LoginActivity;
 import com.grevu.map.GrevuMapActivity;
 
-import twitter4j.RequestMethod;
-
 /**
  * Created by jhkim on 2014. 10. 9..
  */
@@ -34,6 +32,14 @@ public class CategoryActivity extends Activity {
         btn_food = (ImageView) findViewById(R.id.btn_food);
         btn_item = (ImageView) findViewById(R.id.btn_item);
         btn_stay = (ImageView) findViewById(R.id.btn_stay);
+
+        btn_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CategoryActivity.this, ItemActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btn_food.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,8 +76,8 @@ public class CategoryActivity extends Activity {
         btn_stay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
+            startActivity(intent);
             }
         });
 

@@ -23,7 +23,7 @@
     -->
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="90dp"
@@ -33,14 +33,14 @@
 
         <com.facebook.widget.LoginButton
             android:id="@+id/btn_facebook"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             xmlns:fb="http://schemas.android.com/apk/res-auto"
             fb:login_text=""
             fb:logout_text=""
             style="@style/com_facebook_loginview_circle_style"
             />
-
+        <!--
         <ImageView
             android:id="@+id/btn_twitter"
             android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/frontpage_icon_gv"
             android:layout_marginTop="10dp"/>
-
+        -->
     </LinearLayout>
 
 </LinearLayout>

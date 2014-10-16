@@ -36,9 +36,15 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />
 
+        <!-- 카테고리 -->
         <activity
             android:name="com.grevu.category.CategoryActivity"
             android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.grevu.category.ItemActivity"
+            android:theme="@style/noAnimTheme" />
+
+        <!-- 지도 -->
         <activity
             android:name="com.grevu.map.GrevuMapActivity"
             android:theme="@style/noAnimTheme"
