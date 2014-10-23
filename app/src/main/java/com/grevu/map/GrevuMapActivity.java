@@ -106,10 +106,10 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
             MapPolyline mapPolyline = new MapPolyline(mapPointList.size());
             mapPolyline.setTag(GrevuContstants.POLYLINE_TAG);
-            mapPolyline.setLineColor(Color.argb(128, 0, 0, 255));
+            mapPolyline.setLineColor(Color.argb(255, 0, 0, 255));
 
             mapView.addPolyline(convertPointToLine(mapPolyline, mapPointList));
-            //MapPointBounds mapPointBounds = new MapPointBounds(mapPolyline.getMapPoints());
+            
             int padding = 500;
 
             mapView.moveCamera(CameraUpdateFactory.newMapPoint(mp, GrevuContstants.ZOOM_LEVEL));
