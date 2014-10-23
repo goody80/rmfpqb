@@ -2,604 +2,604 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res" >
+        <source path="/Users/jason/git/rmfpqb/facebookSDK/res" >
             <file
                 name="com_facebook_button_blue"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_blue.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_blue.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_blue_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_blue_focused.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_blue_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_blue_normal.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_blue_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_blue_pressed.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_check"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_check.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_check.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_check_off"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_check_off.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_check_off.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_check_on"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_check_on.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_check_on.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_grey_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_grey_focused.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_grey_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_grey_normal.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_grey_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_grey_pressed.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like_background.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like_background.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like_background_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like_background_selected.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like_icon_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like_icon_selected.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like_pressed.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like_pressed.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_like_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_button_like_selected.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_button_like_selected.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_close"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_close.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_close.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_inverse_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_inverse_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_list_divider"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_list_divider.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_list_divider.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_list_section_header_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_list_section_header_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_list_section_header_background.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_loginbutton_silver"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_loginbutton_silver.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_loginbutton_silver.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_logo"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_logo.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_logo.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_item_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_item_background.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_item_background.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_list_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_list_focused.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_longpressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_list_longpressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_list_longpressed.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_list_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_list_pressed.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_selector"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_list_selector.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_list_selector.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_selector_background_transition"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_list_selector_background_transition.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_list_selector_background_transition.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_list_selector_disabled"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_list_selector_disabled.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_list_selector_disabled.9.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_picker_top_button"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_picker_top_button.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_picker_top_button.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_place_default_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_place_default_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_place_default_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_profile_default_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_profile_default_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_profile_default_icon.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_profile_picture_blank_portrait"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_profile_picture_blank_portrait.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_profile_picture_blank_portrait.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_profile_picture_blank_square"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_profile_picture_blank_square.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_profile_picture_blank_square.png"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_top_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_top_background.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_top_background.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_top_button"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_top_button.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_top_button.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_usersettingsfragment_background_gradient"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable/com_facebook_usersettingsfragment_background_gradient.xml"
                 qualifiers=""
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_blue_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_blue_focused.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_blue_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_blue_normal.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_blue_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_blue_pressed.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_grey_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_grey_focused.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_grey_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_grey_normal.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_grey_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_grey_pressed.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_like_background.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_like_background.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_like_background_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_like_background_selected.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_like_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_like_icon.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_like_icon_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_like_icon_selected.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_button_like_pressed.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_button_like_pressed.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_close"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_close.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_close.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_inverse_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_inverse_icon.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_logo"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_logo.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_logo.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_picker_magnifier"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_picker_magnifier.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_picker_magnifier.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_background.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_bottomnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_bottomnub.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_topnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_topnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_topnub.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_xout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_xout.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_black_xout.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_topnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_topnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_topnub.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_xout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_xout.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-hdpi/com_facebook_tooltip_blue_xout.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_close"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-ldpi/com_facebook_close.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-ldpi/com_facebook_close.png"
                 qualifiers="ldpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_button_blue_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_button_blue_focused.9.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_button_blue_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_button_blue_normal.9.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_button_blue_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_button_blue_pressed.9.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_inverse_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_inverse_icon.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_picker_magnifier"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_picker_magnifier.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_picker_magnifier.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_background.9.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_bottomnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_bottomnub.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_topnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_topnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_topnub.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_xout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_xout.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_black_xout.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_background.9.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_bottomnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_bottomnub.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_topnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_topnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_topnub.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_xout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_xout.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-mdpi/com_facebook_tooltip_blue_xout.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_blue_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_blue_focused.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_blue_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_blue_normal.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_blue_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_blue_pressed.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_focused"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_grey_focused.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_normal"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_grey_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_background.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_background.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_background_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_background_selected.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_icon.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_icon_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_icon_selected.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_pressed.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_button_like_pressed.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_close"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_close.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_close.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_inverse_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_inverse_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_inverse_icon.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_logo"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_logo.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_logo.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_picker_magnifier"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_picker_magnifier.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_picker_magnifier.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_background.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_bottomnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_bottomnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_bottomnub.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_topnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_topnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_topnub.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_black_xout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_xout.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_black_xout.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_background.9.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_background.9.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_bottomnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_bottomnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_bottomnub.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_topnub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_topnub.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_topnub.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_tooltip_blue_xout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_xout.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/com_facebook_tooltip_blue_xout.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="frontpage_icon_fb"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xhdpi/frontpage_icon_fb.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xhdpi/frontpage_icon_fb.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_background.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_background.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_background_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_background_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_background_selected.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_icon.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_icon.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_icon_selected"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_icon_selected.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_icon_selected.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_button_like_pressed"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_pressed.png"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/drawable-xxhdpi/com_facebook_button_like_pressed.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="com_facebook_friendpickerfragment"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_friendpickerfragment.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_friendpickerfragment.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_login_activity_layout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_login_activity_layout.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_login_activity_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_activity_circle_row"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_activity_circle_row.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_activity_circle_row.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_checkbox"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_checkbox.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_checkbox.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_image"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_image.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_image.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_list_row"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_list_row.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_list_row.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_list_section_header"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_list_section_header.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_list_section_header.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_search_box"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_search_box.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_search_box.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_title_bar"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_title_bar.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_title_bar.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_picker_title_bar_stub"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_picker_title_bar_stub.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_picker_title_bar_stub.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_placepickerfragment"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_placepickerfragment.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_placepickerfragment.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_placepickerfragment_list_row"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_placepickerfragment_list_row.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_placepickerfragment_list_row.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_search_bar_layout"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_search_bar_layout.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_search_bar_layout.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_tooltip_bubble"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_tooltip_bubble.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_tooltip_bubble.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="com_facebook_usersettingsfragment"
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/layout/com_facebook_usersettingsfragment.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/layout/com_facebook_usersettingsfragment.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values/attrs.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values/attrs.xml"
                 qualifiers="" >
                 <declare-styleable name="com_facebook_profile_picture_view" >
                     <attr name="preset_size" >
@@ -724,7 +724,7 @@
                 </declare-styleable>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values/colors.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values/colors.xml"
                 qualifiers="" >
                 <color name="com_facebook_picker_search_bar_background" >#f5f5f7
                 </color>
@@ -735,14 +735,14 @@
                 </dimen>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values/drawables.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values/drawables.xml"
                 qualifiers="" >
                 <drawable name="com_facebook_picker_default_separator_color" >
 #33464c59
                 </drawable>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values/strings.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values/strings.xml"
                 qualifiers="" >
                 <string name="com_facebook_usersettingsfragment_logged_in" >Logged in
                 </string>
@@ -802,7 +802,7 @@
                 </string>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values/styles.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values/styles.xml"
                 qualifiers="" >
                 <dimen name="com_facebook_profilepictureview_preset_size_normal" >100dp
                 </dimen>
@@ -979,7 +979,7 @@ center
                 </dimen>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-es/strings.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-es/strings.xml"
                 qualifiers="es" >
                 <string name="com_facebook_nearby" >Cercano
                 </string>
@@ -1033,13 +1033,13 @@ center
                 </string>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-hdpi/dimens.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-hdpi/dimens.xml"
                 qualifiers="hdpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >1px
                 </dimen>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-he/strings.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-he/strings.xml"
                 qualifiers="he" >
                 <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
                 </string>
@@ -1093,7 +1093,7 @@ center
                 </string>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-iw/strings.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-iw/strings.xml"
                 qualifiers="iw" >
                 <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
                 </string>
@@ -1147,29 +1147,29 @@ center
                 </string>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-ldpi/dimens.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-ldpi/dimens.xml"
                 qualifiers="ldpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >1px
                 </dimen>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-mdpi/dimens.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-mdpi/dimens.xml"
                 qualifiers="mdpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >1px
                 </dimen>
             </file>
             <file
-                path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-xhdpi/dimens.xml"
+                path="/Users/jason/git/rmfpqb/facebookSDK/res/values-xhdpi/dimens.xml"
                 qualifiers="xhdpi-v4" >
                 <dimen name="com_facebook_picker_divider_width" >2px
                 </dimen>
             </file>
         </source>
-        <source path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/build/generated/res/rs/release" />
-        <source path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/build/generated/res/generated/release" />
+        <source path="/Users/jason/git/rmfpqb/facebookSDK/build/generated/res/rs/release" />
+        <source path="/Users/jason/git/rmfpqb/facebookSDK/build/generated/res/generated/release" />
     </dataSet>
     <dataSet config="release" >
-        <source path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/src/release/res" />
+        <source path="/Users/jason/git/rmfpqb/facebookSDK/src/release/res" />
     </dataSet>
 
 </merger>
