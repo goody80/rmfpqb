@@ -761,11 +761,11 @@
                 </string>
                 <string name="com_facebook_requesterror_password_changed" >Your Facebook password has changed. Please log into this app again to reconnect your Facebook account.
                 </string>
-                <string name="com_facebook_logo_content_description" >Facebook Logo
+                <string name="com_facebook_choose_friends" >Choose Friends
                 </string>
                 <string name="com_facebook_loginview_log_in_button" >Log in with Facebook
                 </string>
-                <string name="com_facebook_choose_friends" >Choose Friends
+                <string name="com_facebook_logo_content_description" >Facebook Logo
                 </string>
                 <string name="com_facebook_requesterror_reconnect" >Please log into this app again to reconnect your Facebook account.
                 </string>
@@ -807,20 +807,20 @@
             <file
                 path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values/styles.xml"
                 qualifiers="" >
-                <dimen name="com_facebook_profilepictureview_preset_size_normal" >100dp
-                </dimen>
                 <dimen name="com_facebook_loginview_padding_left" >12dip
+                </dimen>
+                <dimen name="com_facebook_profilepictureview_preset_size_normal" >100dp
                 </dimen>
                 <dimen name="com_facebook_likeview_internal_padding" >6dp
                 </dimen>
-                <dimen name="com_facebook_loginview_padding_right" >16dp
-                </dimen>
                 <dimen name="com_facebook_likebutton_text_size" >13.0sp
                 </dimen>
+                <dimen name="com_facebook_loginview_padding_right" >16dp
+                </dimen>
 
-                <color name="com_facebook_likeboxcountview_text_color" >#6a7180
-                </color>
                 <color name="com_facebook_likeview_text_color" >#6a7180
+                </color>
+                <color name="com_facebook_likeboxcountview_text_color" >#6a7180
                 </color>
                 <color name="com_facebook_blue" >#3B5998
                 </color>
@@ -876,9 +876,9 @@ wrap_content
                 <color name="com_facebook_usersettingsfragment_not_connected_text_color" >#A6AED7
                 </color>
 
-                <dimen name="com_facebook_loginview_padding_top" >12dp
-                </dimen>
                 <dimen name="com_facebook_likeview_edge_padding" >2dp
+                </dimen>
+                <dimen name="com_facebook_loginview_padding_top" >12dp
                 </dimen>
                 <dimen name="com_facebook_likeboxcountview_caret_height" >3dp
                 </dimen>
@@ -935,16 +935,18 @@ center
                     </item>
                 </style>
 
-                <color name="com_facebook_likeboxcountview_border_color" >#6a7180
-                </color>
                 <color name="com_facebook_usersettingsfragment_connected_shadow_color" >#000000
+                </color>
+                <color name="com_facebook_likeboxcountview_border_color" >#6a7180
                 </color>
 
                 <dimen name="com_facebook_likeboxcountview_border_radius" >3dp
                 </dimen>
+                <dimen name="com_facebook_likeboxcountview_text_padding" >6dp
+                </dimen>
                 <dimen name="com_facebook_tooltip_horizontal_padding" >10dp
                 </dimen>
-                <dimen name="com_facebook_likeboxcountview_text_padding" >6dp
+                <dimen name="com_facebook_likebutton_padding_bottom" >0dp
                 </dimen>
 
                 <style
@@ -976,8 +978,6 @@ center
                     </item>
                 </style>
 
-                <dimen name="com_facebook_likebutton_padding_bottom" >0dp
-                </dimen>
                 <dimen name="com_facebook_likebutton_compound_drawable_padding" >8dp
                 </dimen>
             </file>
@@ -988,27 +988,11 @@ center
                 </string>
                 <string name="com_facebook_requesterror_password_changed" >Su contraseña de Facebook ha cambiado, por favor vuelva a conectar la aplicación con Facebook.
                 </string>
-                <string name="com_facebook_requesterror_reconnect" >Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.
-                </string>
-                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d estuvieron aquí
-                </string>
-                <string name="com_facebook_loading" >Cargando
-                </string>
-                <string name="com_facebook_requesterror_web_login" >Por favor, iniciar sesión a través https://www.facebook.com o https://m.facebook.com para volver a activar la aplicación para conectar con Facebook.
-                </string>
-                <string name="com_facebook_loginview_cancel_action" >Cancelar
-                </string>
-                <string name="com_facebook_choose_friends" >Elige Amigos
-                </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >Aceptar
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >Iniciar sesión con Facebook
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >Sesión iniciada como: %1$s
-                </string>
                 <string name="com_facebook_loginview_log_out_action" >Cerrar sesión
                 </string>
                 <string name="com_facebook_requesterror_permissions" >Una conexión de aplicación con Facebook falló debido a permisos insuficientes, por favor, conceda los permisos de aplicaciones para realizar la operación.
+                </string>
+                <string name="com_facebook_requesterror_reconnect" >Se produjo un error al conectar con Facebook, por favor vuelva a conectar la aplicación con Facebook.
                 </string>
                 <string name="com_facebook_usersettingsfragment_logged_in" >Sesión iniciada
                 </string>
@@ -1018,21 +1002,37 @@ center
                 </string>
                 <string name="com_facebook_loginview_logged_in_using_facebook" >Sesión iniciada con Facebook
                 </string>
+                <string name="com_facebook_placepicker_subtitle_format" >%1$s • %2$,d estuvieron aquí
+                </string>
+                <string name="com_facebook_loading" >Cargando
+                </string>
+                <string name="com_facebook_requesterror_web_login" >Por favor, iniciar sesión a través https://www.facebook.com o https://m.facebook.com para volver a activar la aplicación para conectar con Facebook.
+                </string>
                 <string name="com_facebook_picker_done_button_text" >Aceptar
                 </string>
                 <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
                 </string>
+                <string name="com_facebook_loginview_cancel_action" >Cancelar
+                </string>
                 <string name="com_facebook_internet_permission_error_message" >WebView inicio de sesión requiere permiso INTERNET
+                </string>
+                <string name="com_facebook_choose_friends" >Elige Amigos
                 </string>
                 <string name="com_facebook_placepicker_subtitle_were_here_only_format" >es:%1$,d estuvieron aquí
                 </string>
                 <string name="com_facebook_requesterror_relogin" >La aplicación no se conecta con Facebook, inicie sesión y volver a conectar esta aplicación.
                 </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >Aceptar
+                </string>
                 <string name="com_facebook_usersettingsfragment_log_in_button" >Iniciar sesión…
                 </string>
                 <string name="com_facebook_logo_content_description" >Logo de Facebook
                 </string>
+                <string name="com_facebook_loginview_log_in_button" >Iniciar sesión con Facebook
+                </string>
                 <string name="com_facebook_loginview_log_out_button" >Cerrar sesión
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >Sesión iniciada como: %1$s
                 </string>
             </file>
             <file
@@ -1052,21 +1052,21 @@ center
                 </string>
                 <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
                 </string>
-                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
-                </string>
                 <string name="com_facebook_picker_done_button_text" >בצע
+                </string>
+                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
                 </string>
                 <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
                 </string>
                 <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
                 </string>
-                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
-                </string>
                 <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
                 </string>
-                <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
+                <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
                 </string>
                 <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
+                </string>
+                <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
                 </string>
                 <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
                 </string>
@@ -1098,19 +1098,41 @@ center
             <file
                 path="/Users/jhkim/Desktop/develop/Grevu/facebookSDK/res/values-iw/strings.xml"
                 qualifiers="iw" >
+                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
+                </string>
                 <string name="com_facebook_usersettingsfragment_log_in_button" >התחבר…
                 </string>
+                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
+                </string>
+                <string name="com_facebook_picker_done_button_text" >בצע
+                </string>
                 <string name="com_facebook_loginview_log_out_button" >התנתק
+                </string>
+                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
                 </string>
                 <string name="com_facebook_loginview_logged_in_using_facebook" >מחובר באמצעות פייסבוק
                 </string>
                 <string name="com_facebook_internet_permission_error_message" >ההתחברות לתצוגת אתר דורשת אישור אינטרנט
                 </string>
+                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
+                </string>
                 <string name="com_facebook_loginview_log_out_action" >התנתק
                 </string>
                 <string name="com_facebook_placepicker_subtitle_catetory_only_format" >%1$s
                 </string>
+                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
+                </string>
+                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
+                </string>
                 <string name="com_facebook_choose_friends" >בחר חברים
+                </string>
+                <string name="com_facebook_loading" >..מעלה
+                </string>
+                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
+                </string>
+                <string name="com_facebook_nearby" >קרוב אליי
+                </string>
+                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
                 </string>
                 <string name="com_facebook_placepicker_subtitle_were_here_only_format" >%1$,d היו פה
                 </string>
@@ -1120,33 +1142,11 @@ center
                 </string>
                 <string name="com_facebook_requesterror_permissions" >.חיבור האפליקציה עם פייסבוק נכשל בשל הרשאות לא מספקות, אנא הענק הרשאות לאפליקציה בכדי שהפעולה תוכל להתבצע
                 </string>
+                <string name="com_facebook_loginview_cancel_action" >בטל
+                </string>
                 <string name="com_facebook_requesterror_web_login" >.כדי לאפשר מחדש לאפליקציה להתחבר עם פייסבוק https://www.facebook.com או https://m.facebook.com אנא היכנס דרך
                 </string>
                 <string name="com_facebook_requesterror_relogin" >.האפליקציה אינה מחוברת לפייסבוק, אנא היכנס וחבר מחדש את האפליקציה
-                </string>
-                <string name="com_facebook_requesterror_password_changed" >.הסיסמה שלך בפייסבוק השתנתה, אנא חבר מחדש את האפליקציה עם פייסבוק
-                </string>
-                <string name="com_facebook_picker_done_button_text" >בצע
-                </string>
-                <string name="com_facebook_internet_permission_error_title" >AndroidManifest שגיאת
-                </string>
-                <string name="com_facebook_loginview_logged_in_as" >מחובר בשם: %1$s
-                </string>
-                <string name="com_facebook_requesterror_reconnect" >.ארעה שגיאה בעת החיבור עם פייסבוק, חבר בבקשה מחדש את האפליקציה עם פייסבוק
-                </string>
-                <string name="com_facebook_usersettingsfragment_logged_in" >מחובר
-                </string>
-                <string name="com_facebook_logo_content_description" >פייסבוק לוגו
-                </string>
-                <string name="com_facebook_dialogloginactivity_ok_button" >אישור
-                </string>
-                <string name="com_facebook_loading" >..מעלה
-                </string>
-                <string name="com_facebook_loginview_log_in_button" >התחבר לפייסבוק
-                </string>
-                <string name="com_facebook_nearby" >קרוב אליי
-                </string>
-                <string name="com_facebook_loginview_cancel_action" >בטל
                 </string>
             </file>
             <file

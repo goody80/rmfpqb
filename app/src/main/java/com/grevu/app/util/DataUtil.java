@@ -9,6 +9,8 @@ import android.content.SharedPreferences;
  */
 public class DataUtil {
 
+    public static final String IMAGE_URL = "http://121.189.39.226/";
+
     public static String getPreferences(Activity activity, String name){
         SharedPreferences pref = activity.getSharedPreferences("pref", Context.MODE_PRIVATE);
         return pref.getString(name, "");
