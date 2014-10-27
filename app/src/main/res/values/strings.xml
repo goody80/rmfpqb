@@ -12,7 +12,8 @@
     <string name="title_activity_grevu_map">GrevuMapActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-
     <string name="title_complete">완료</string>
     <string name="title_cancel">취소</string>
+    <string name="title_activity_poi_result">PoiResultActivity</string>
+
 </resources>
