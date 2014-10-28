@@ -14,6 +14,7 @@ import com.facebook.SessionState;
 import com.facebook.model.GraphUser;
 import com.grevu.app.R;
 import com.grevu.app.view.LoginActivity;
+import com.grevu.item.ItemListActivity;
 import com.grevu.map.GrevuMapActivity;
 
 /**
@@ -36,7 +37,7 @@ public class CategoryActivity extends Activity {
         btn_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryActivity.this, ItemActivity.class);
+                Intent intent = new Intent(CategoryActivity.this, ItemListActivity.class);
                 startActivity(intent);
             }
         });

@@ -4,16 +4,11 @@ import android.app.Activity;
 
 import com.grevu.app.constant.GrevuContstants;
 
-import net.daum.mf.map.api.CameraUpdateFactory;
 import net.daum.mf.map.api.MapCircle;
 import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
-import net.daum.mf.map.api.MapPointBounds;
 import net.daum.mf.map.api.MapReverseGeoCoder;
 import net.daum.mf.map.api.MapView;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by jason on 14. 10. 23..

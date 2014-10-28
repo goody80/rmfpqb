@@ -12,7 +12,7 @@ import android.widget.Button;
 import com.grevu.app.R;
 import com.grevu.app.constant.GrevuContstants;
 import com.grevu.app.util.Logger;
-import com.grevu.category.ItemActivity;
+import com.grevu.item.ItemListActivity;
 
 import net.daum.mf.map.api.CameraUpdateFactory;
 import net.daum.mf.map.api.MapCircle;
@@ -206,7 +206,7 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
                 break;
             case R.id.btnComplete:
                 //move to category activity
-                Intent intent = new Intent(this, ItemActivity.class);
+                Intent intent = new Intent(this, ItemListActivity.class);
 
                 startActivity(intent);
 			    break;

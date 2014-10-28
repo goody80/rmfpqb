@@ -38,7 +38,10 @@
             android:name="com.grevu.category.CategoryActivity"
             android:theme="@style/noAnimTheme" />
         <activity
-            android:name="com.grevu.category.ItemActivity"
+            android:name="com.grevu.item.ItemListActivity"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.grevu.item.DescItemActivity"
             android:theme="@style/noAnimTheme" />
 
         <!-- 지도 -->

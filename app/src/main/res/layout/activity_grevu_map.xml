@@ -6,13 +6,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.grevu.app.GrevuMainActivity" >
+    tools:context="com.grevu.app.GrevuMainActivity">
 
     <RelativeLayout
         android:id="@+id/mapViewGroup"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
     </RelativeLayout>
 
@@ -22,7 +22,7 @@
         android:layout_alignParentBottom="true"
         android:background="#770077ff"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnComplete"
