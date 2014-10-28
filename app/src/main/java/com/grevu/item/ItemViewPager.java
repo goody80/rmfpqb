@@ -32,7 +32,7 @@ public class ItemViewPager extends ViewPager {
     }
 
     public void init() {
-        pagerAdapter = new ItemViewPagerAdapter(context);
+        pagerAdapter = new ItemViewPagerAdapter();
         setAdapter(pagerAdapter);
 
     }

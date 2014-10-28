@@ -10,5 +10,5 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:gravity="center"
-        android:text="단순 카드"/>
+        android:text="SHOP"/>
 </com.grevu.item.ItemView>

@@ -1,6 +1,7 @@
 package com.grevu.item;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import com.grevu.app.data.ItemData;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by jhkim on 2014-10-27.
@@ -46,6 +48,9 @@ public class ItemListAdapter extends ArrayAdapter<ItemData> {
                     view = vi.inflate(R.layout.row_itempager, null);
                 } else {
                     view = vi.inflate(R.layout.row_itemview, null);
+                    Random rnd = new Random();
+                    int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+                    view.setBackgroundColor(color);
                 }
             }
 

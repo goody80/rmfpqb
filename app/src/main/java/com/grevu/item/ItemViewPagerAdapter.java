@@ -19,12 +19,7 @@ public class ItemViewPagerAdapter extends PagerAdapter {
     private final String[] sDrawableUrls = {"http://tong.visitkorea.or.kr/cms/resource/12/1954312_image2_1.jpg?&name=image2&index=1", "http://tong.visitkorea.or.kr/cms/resource/11/1954311_image2_1.jpg?&name=image2&index=1"
             , "http://tong.visitkorea.or.kr/cms/resource/09/1954309_image2_1.jpg?&name=image2&index=1", "http://tong.visitkorea.or.kr/cms/resource/04/1954304_image2_1.jpg?&name=image2&index=1"};
 
-    Context context;
-
-    public ItemViewPagerAdapter(Context context) {
-        this.context = context;
-        Log.d(TAG, "create ItemViewPagerAdapter");
-    }
+    public ItemViewPagerAdapter() {}
 
     @Override
     public int getCount() {
@@ -33,7 +28,8 @@ public class ItemViewPagerAdapter extends PagerAdapter {
 
     @Override
     public View instantiateItem(ViewGroup container, final int position) {
-        ImageView photoView = new ImageView(container.getContext());
+        final Context context = container.getContext();
+        ImageView photoView = new ImageView(context);
         photoView.setScaleType(ImageView.ScaleType.FIT_XY);
 
         // Now just add PhotoView to ViewPager and return it
