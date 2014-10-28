@@ -26,5 +26,7 @@ public class GrevuContstants {
         public static final int getCircleFillColor() {
             return Color.argb(55,128,0,0);
         }
+
+        public static final int RADIUS = 500;
     }
 }

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -24,16 +23,16 @@ import net.daum.mf.map.api.MapPolyline;
 import net.daum.mf.map.api.MapView;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class GrevuMapActivity extends Activity implements View.OnClickListener, MapView.MapViewEventListener, MapView.CurrentLocationEventListener, MapView.POIItemEventListener {
     MapView mMapView;
     MapPointBounds mMapPointBounds;
+
     Map<String,MapPointBounds> mPointBoundsMap;
+    private static final String K_CUR_MAPPOINT = "kCurMapPoint";
 
     ViewGroup mapViewGroup;
     Button btnCancel;
@@ -118,31 +117,29 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
         mapPointList.add(mp);
 
-        //if user tapped at least 2 point, grevu displayed polyline.
-        if (mapPointList.size() > 0) {
-            MapPolyline existingPolyline = mMapView.findPolylineByTag(GrevuContstants.POLYLINE_TAG);
+        MapPolyline existingPolyline = mv.findPolylineByTag(GrevuContstants.POLYLINE_TAG);
 
-            if (existingPolyline != null) {
-                mMapView.removePolyline(existingPolyline);
-            }
+        if (existingPolyline != null) {
+            mv.removePolyline(existingPolyline);
+        }
 
-            MapPolyline mapPolyline = new MapPolyline(mapPointList.size());
-            mapPolyline.setTag(GrevuContstants.POLYLINE_TAG);
-            mapPolyline.setLineColor(Color.argb(128, 255, 0, 0));
+        MapPolyline mapPolyline = new MapPolyline(mapPointList.size());
+        mapPolyline.setTag(GrevuContstants.POLYLINE_TAG);
+        mapPolyline.setLineColor(Color.argb(128, 255, 0, 0));
 
-            mMapView.addPolyline(convertPointToLine(mapPolyline, mapPointList));
+        mv.addPolyline(convertPointToLine(mapPolyline, mapPointList));
 
-            if (mMapView.isShowingCurrentLocationMarker()) {
+        //remove all poi
+        mv.removeAllPOIItems();
 
-            }
+        //add new marker after remove current marker
+        mv.addPOIItem(GrevuMapUtil.setCurrentPositionByMarker(mapPointList.get(mapPointList.size() - 1)));
 
-            //remove all poi
-            mMapView.removeAllPOIItems();
+        mv.moveCamera(CameraUpdateFactory.newMapPoint(mp, GrevuContstants.ZOOM_LEVEL));
 
-            //add new marker after remove current marker
-            mMapView.addPOIItem(GrevuMapUtil.setCurrentPositionByMarker(mapPointList.get(mapPointList.size() - 1)));
-
-            mMapView.moveCamera(CameraUpdateFactory.newMapPoint(mp, GrevuContstants.ZOOM_LEVEL));
+        //if first MapPoint is tapped, create circle and move to center point.
+        if (mapPointList.size() == 1) {
+            hideCurrentLocationPoint(mv,false);
         }
     }
 
@@ -155,20 +152,7 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
     public void onCurrentLocationUpdate(MapView mv, MapPoint mp, float v) {
         Logger.i("[GrevuMapActivity] onCurrentLocationUpdate / current longitude =  " + mp.getMapPointGeoCoord().longitude + ", latitude = " + mp.getMapPointGeoCoord().latitude);
 
-        MapCircle mapCircle = new MapCircle(MapPoint.mapPointWithGeoCoord(mp.getMapPointGeoCoord().latitude, mp.getMapPointGeoCoord().longitude),500, GrevuContstants.GREVU_CIRCLE.getCircleLineColor(), GrevuContstants.GREVU_CIRCLE.getCircleFillColor());
-        mapCircle.setTag(GrevuContstants.CIRCLE_TAG);
-        mv.addCircle(mapCircle);
-
-        MapPointBounds[] mapPointBoundsArray = {mapCircle.getBound()};
-        MapPointBounds mapPointBounds = new MapPointBounds(mapPointBoundsArray);
-
-        if (mPointBoundsMap == null) {
-            mPointBoundsMap = new HashMap<String, MapPointBounds>();
-        }
-        mPointBoundsMap.put("kCurMapPoint", mapPointBounds);
-
-        int padding = 50;
-        mv.moveCamera(CameraUpdateFactory.newMapPointBounds(mapPointBounds, padding));
+        makeCircleInCurrentLocation(mv, mp);
     }
 
     @Override
@@ -250,5 +234,30 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
         polyline.addPoints(arrMapPoint);
 
         return polyline;
+    }
+
+    private void makeCircleInCurrentLocation(MapView mapView, MapPoint mapPoint) {
+        //Before making circle, remove all circles.
+        mapView.removeAllCircles();
+
+        MapCircle mapCircle = GrevuMapUtil.createMapCircle(mapPoint);
+        mapView.addCircle(mapCircle);
+
+        MapPointBounds[] mapPointBoundsArray = {mapCircle.getBound()};
+        MapPointBounds mapPointBounds = new MapPointBounds(mapPointBoundsArray);
+
+        if (mPointBoundsMap == null) {
+            mPointBoundsMap = new HashMap<String, MapPointBounds>();
+        }
+        mPointBoundsMap.put(K_CUR_MAPPOINT, mapPointBounds);
+
+        int padding = 50;
+        mapView.moveCamera(CameraUpdateFactory.newMapPointBounds(mapPointBounds, padding));
+    }
+
+    private void hideCurrentLocationPoint(MapView mapView, boolean isHide) throws NullPointerException {
+        mapView.setShowCurrentLocationMarker(isHide);
+        mapView.removeAllCircles();
+        mapView.moveCamera(CameraUpdateFactory.newMapPoint(mapPointList.get(0)));
     }
 }

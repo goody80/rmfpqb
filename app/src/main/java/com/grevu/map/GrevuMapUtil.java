@@ -4,11 +4,16 @@ import android.app.Activity;
 
 import com.grevu.app.constant.GrevuContstants;
 
+import net.daum.mf.map.api.CameraUpdateFactory;
 import net.daum.mf.map.api.MapCircle;
 import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
+import net.daum.mf.map.api.MapPointBounds;
 import net.daum.mf.map.api.MapReverseGeoCoder;
 import net.daum.mf.map.api.MapView;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by jason on 14. 10. 23..
@@ -30,9 +35,9 @@ public class GrevuMapUtil {
     /**
      * Make a Circle
      * */
-    public static MapCircle createMapCircle(double longitude, double latitude, int radius, int strokeColor, int fillColor) {
+    public static MapCircle createMapCircle(MapPoint mapPoint) {
 
-        MapCircle mapCircle = new MapCircle(MapPoint.mapPointWithGeoCoord(longitude, latitude), radius, strokeColor, fillColor);
+        MapCircle mapCircle = new MapCircle(mapPoint, GrevuContstants.GREVU_CIRCLE.RADIUS, GrevuContstants.GREVU_CIRCLE.getCircleLineColor(), GrevuContstants.GREVU_CIRCLE.getCircleFillColor());
 
         mapCircle.setTag(GrevuContstants.CIRCLE_TAG);
         return mapCircle;
