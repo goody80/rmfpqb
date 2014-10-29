@@ -1,7 +1,7 @@
 # Created by .gitignore support plugin (hsz.mobi)
 ### Android template
 # Built application files
-*.apk
+*.apkg
 
 # Generated files
 bin/
