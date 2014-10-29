@@ -20,11 +20,11 @@ public class GrevuContstants {
 
     public static final class GREVU_CIRCLE {
         public static final int getCircleLineColor() {
-            return Color.argb(128,0,128,0);
+            return Color.argb(128, 0, 128, 0);
         }
 
         public static final int getCircleFillColor() {
-            return Color.argb(55,128,0,0);
+            return Color.argb(55, 128, 0, 0);
         }
 
         public static final int RADIUS = 500;

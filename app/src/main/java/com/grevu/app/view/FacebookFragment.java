@@ -62,12 +62,10 @@ public class FacebookFragment extends Fragment {
         // session is not null, the session state change notification
         // may not be triggered. Trigger it if it's open/closed.
         Session session = Session.getActiveSession();
-        Log.d(TAG, "session : " + session.toString() + " " + session.getExpirationDate());
         if (session != null &&
-                (session.isOpened() || session.isClosed()) ) {
+                (session.isOpened() || session.isClosed())) {
             onSessionStateChange(session, session.getState(), null);
         }
-
 
 
         uiHelper.onResume();
@@ -76,7 +74,6 @@ public class FacebookFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d(TAG, "onActivityResult");
         uiHelper.onActivityResult(requestCode, resultCode, data);
     }
 
@@ -116,7 +113,7 @@ public class FacebookFragment extends Fragment {
             Log.i(TAG, "Logged out...");
         }
 
-        if(exception != null){
+        if (exception != null) {
             Log.e(TAG, "exception : " + exception.toString());
         }
     }

@@ -199,9 +199,11 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
                 mapPointList.clear();
 
                 //move to user's current position
-                MapPointBounds bounds = mPointBoundsMap.get("kCurMapPoint");
+                if(mPointBoundsMap != null) {
+                    MapPointBounds bounds = mPointBoundsMap.get("kCurMapPoint");
 
-                mMapView.moveCamera(CameraUpdateFactory.newMapPoint(bounds.getCenter()));
+                    mMapView.moveCamera(CameraUpdateFactory.newMapPoint(bounds.getCenter()));
+                }
 
                 break;
             case R.id.btnComplete:

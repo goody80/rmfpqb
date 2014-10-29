@@ -33,7 +33,7 @@ public class Logger {
      */
     public static void d(String msg) {
 
-        if(GrevuContstants.DEBUGGABLE_LOG_ENABLED)
+        if (GrevuContstants.DEBUGGABLE_LOG_ENABLED)
             android.util.Log.d(GrevuContstants.TAG, msg);
     }
 }

@@ -2,10 +2,8 @@ package com.grevu.app.view;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.view.View;
 import android.widget.ImageView;
 
-import com.grevu.app.R;
 import com.grevu.app.util.DataUtil;
 
 /**
@@ -56,11 +54,11 @@ public class LoginActivity extends FragmentActivity {
 
     //로그인 상태일 때는 finish
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         boolean isLogin = Boolean.parseBoolean(DataUtil.getPreferences(this, "isLogin"));
 
-        if(isLogin){
+        if (isLogin) {
             finish();
         }
     }
