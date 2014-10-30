@@ -15,7 +15,6 @@
         android:name=".GravuApplication">
         <activity
             android:name=".IntroActivity"
-            android:label="@string/app_name"
             android:noHistory="true"
             android:theme="@style/noAnimTheme" >
             <intent-filter>
@@ -52,11 +51,6 @@
             android:name="com.grevu.map.GrevuMapActivity"
             android:screenOrientation="portrait"
             android:theme="@style/noAnimTheme" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.grevu.map.PoiResultActivity"

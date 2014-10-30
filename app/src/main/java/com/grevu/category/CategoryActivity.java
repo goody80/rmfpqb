@@ -25,7 +25,7 @@ public class CategoryActivity extends Activity {
     ImageView btn_food, btn_stay, btn_item;
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_category);
@@ -37,7 +37,7 @@ public class CategoryActivity extends Activity {
         btn_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CategoryActivity.this, ItemListActivity.class);
+                Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
                 startActivity(intent);
             }
         });
@@ -45,43 +45,42 @@ public class CategoryActivity extends Activity {
         btn_food.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //temparary fb logout
-                Session.openActiveSession(CategoryActivity.this, true, new Session.StatusCallback(){
-                   @Override
-                   public void call(final Session session, final SessionState state, Exception exception){
-                       Log.i(TAG, session.toString());
-                       if(session.isOpened()){
-                           Request.executeMeRequestAsync(session, new Request.GraphUserCallback(){
-                              @Override
-                              public void onCompleted(GraphUser user, Response response){
-                                  if(user != null){
-                                      try{
-                                          session.close();
-                                          session.closeAndClearTokenInformation();
-
-                                          Intent intent = new Intent(CategoryActivity.this, LoginActivity.class);
-                                          finish();
-                                          startActivity(intent);
-                                      }catch (Exception e){
-                                          e.printStackTrace();
-                                      }
-                                  }
-                              }
-                           });
-                       }
-                   }
-                });
+                Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
+                startActivity(intent);
             }
         });
 
         btn_stay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
-            startActivity(intent);
+                //temparary fb logout
+                Session.openActiveSession(CategoryActivity.this, true, new Session.StatusCallback() {
+                    @Override
+                    public void call(final Session session, final SessionState state, Exception exception) {
+                        Log.i(TAG, session.toString());
+                        if (session.isOpened()) {
+                            Request.executeMeRequestAsync(session, new Request.GraphUserCallback() {
+                                @Override
+                                public void onCompleted(GraphUser user, Response response) {
+                                    if (user != null) {
+                                        try {
+                                            session.close();
+                                            session.closeAndClearTokenInformation();
+
+                                            Intent intent = new Intent(CategoryActivity.this, LoginActivity.class);
+                                            finish();
+                                            startActivity(intent);
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
             }
         });
-
 
     }
 }
