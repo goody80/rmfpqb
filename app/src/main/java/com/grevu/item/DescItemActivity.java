@@ -23,6 +23,6 @@ public class DescItemActivity extends Activity {
         idxPhoto = (TextView) findViewById(R.id.idx_photo);
 
         Intent intent = getIntent();
-        idxPhoto.setText("Shop #"+String.valueOf(intent.getIntExtra("index", 0))+"의 메뉴화면");
+        idxPhoto.setText("Shop #" + String.valueOf(intent.getIntExtra("index", 0)) + "의 메뉴화면");
     }
 }

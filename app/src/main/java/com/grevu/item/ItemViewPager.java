@@ -31,11 +31,11 @@ public class ItemViewPager extends ViewPager {
     }
 
     // list의 position 정보 set,get
-    public void setListPosition(int listPosition){
+    public void setListPosition(int listPosition) {
         this.listPosition = listPosition;
     }
 
-    public int getListPosition(){
+    public int getListPosition() {
         return listPosition;
     }
 

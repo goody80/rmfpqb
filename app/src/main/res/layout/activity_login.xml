@@ -31,8 +31,7 @@
         android:orientation="vertical">
 
 
-        <com.facebook.widget.LoginButton
-            xmlns:fb="http://schemas.android.com/apk/res-auto"
+        <com.facebook.widget.LoginButton xmlns:fb="http://schemas.android.com/apk/res-auto"
             android:id="@+id/btn_facebook"
             style="@style/com_facebook_loginview_circle_style"
             android:layout_width="64dp"

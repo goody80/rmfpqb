@@ -43,7 +43,7 @@ public class ItemViewPagerAdapter extends PagerAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(context, DescItemActivity.class);
                 //container(ItemViewPager)에서 listPosition get
-                intent.putExtra("index", ((ItemViewPager)container).getListPosition());
+                intent.putExtra("index", ((ItemViewPager) container).getListPosition());
                 context.startActivity(intent);
             }
         });

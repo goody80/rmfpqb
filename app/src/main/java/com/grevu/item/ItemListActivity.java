@@ -48,6 +48,14 @@ public class ItemListActivity extends Activity {
 
         listView.setAdapter(adapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Intent intent = new Intent(ItemListActivity.this, DescItemActivity.class);
+                intent.putExtra("index", position);
+                startActivity(intent);
+            }
+        });
     }
 
 }

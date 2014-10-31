@@ -1,7 +1,10 @@
 package com.grevu.item;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.widget.LinearLayout;
+
+import java.util.Random;
 
 /**
  * 단순 카드 형태의 item
@@ -11,14 +14,23 @@ public class ItemView extends LinearLayout {
 
     public ItemView(Context context) {
         super(context);
+        init();
     }
 
     public ItemView(android.content.Context context, android.util.AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     public ItemView(android.content.Context context, android.util.AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
+        init();
+    }
+
+    public void init() {
+        Random rnd = new Random();
+        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+        setBackgroundColor(color);
     }
 
 }

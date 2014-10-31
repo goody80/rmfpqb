@@ -40,43 +40,26 @@ public class ItemListAdapter extends ArrayAdapter<ItemData> {
 
     @Override
     public View getView(final int position, View convertView, final ViewGroup parent) {
-        View view = convertView;
         ItemData item = getItem(position);
 
-        if (view == null) {
+        LayoutInflater inflater = LayoutInflater.from(getContext());
 
-            LayoutInflater inflater = LayoutInflater.from(getContext());
+        if (item != null) {
+            //임시
+            if (item.getType().equals("P")) {
+                convertView = inflater.inflate(R.layout.row_itempager, null);
 
-            if (item != null) {
-                //임시
-                if (item.getType().equals("P")) {
-                    view =  inflater.inflate(R.layout.row_itempager, null);
+                // viewpager에 list position 전달을 위해
+                ItemViewPager pager = (ItemViewPager) convertView.findViewById(R.id.pager_category);
+                pager.setListPosition(position);
 
-                    // viewpager에 list position 전달을 위해
-                    ItemViewPager pager = (ItemViewPager) view.findViewById(R.id.pager_category);
-                    pager.setListPosition(position);
-
-                } else {
-                    view = inflater.inflate(R.layout.row_itemview, null);
-                    Log.d(TAG, "view : " + view + " " + parent);
-                    Random rnd = new Random();
-                    int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
-                    view.setBackgroundColor(color);
-
-                    view.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(context, DescItemActivity.class);
-                            intent.putExtra("index", position);
-                            context.startActivity(intent);
-                        }
-                    });
-                }
-
+            } else {
+                convertView = inflater.inflate(R.layout.row_itemview, null);
+                Log.d(TAG, "view : " + convertView + " " + parent);
             }
         }
 
-        return view;
+        return convertView;
 
     }
 
