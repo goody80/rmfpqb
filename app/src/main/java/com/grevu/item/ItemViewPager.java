@@ -3,11 +3,6 @@ package com.grevu.item;
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.widget.LinearLayout;
-
-import com.grevu.app.R;
 
 /**
  * viewpager 형태의 item
@@ -18,8 +13,7 @@ public class ItemViewPager extends ViewPager {
     private static final String TAG = "ItemViewPager";
 
     private ItemViewPagerAdapter pagerAdapter;
-    private Context context;
-    private ViewPager mViewPager;
+    private int listPosition = 0;
 
     public ItemViewPager(Context context) {
         super(context);
@@ -34,7 +28,15 @@ public class ItemViewPager extends ViewPager {
     public void init() {
         pagerAdapter = new ItemViewPagerAdapter();
         setAdapter(pagerAdapter);
+    }
 
+    // list의 position 정보 set,get
+    public void setListPosition(int listPosition){
+        this.listPosition = listPosition;
+    }
+
+    public int getListPosition(){
+        return listPosition;
     }
 
 }

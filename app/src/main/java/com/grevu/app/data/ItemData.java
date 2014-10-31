@@ -1,6 +1,7 @@
 package com.grevu.app.data;
 
 /**
+ * 카테고리 중 item에 해당하는 dataset
  * Created by jhkim on 2014-10-27.
  */
 public class ItemData {

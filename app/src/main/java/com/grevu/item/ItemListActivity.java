@@ -1,8 +1,10 @@
 package com.grevu.item;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.grevu.app.R;
@@ -45,6 +47,7 @@ public class ItemListActivity extends Activity {
         ItemListAdapter adapter = new ItemListAdapter(this, R.layout.row_itemview, itemList);
 
         listView.setAdapter(adapter);
+
     }
 
 }
