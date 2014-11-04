@@ -44,7 +44,7 @@ public class ItemListActivity extends Activity {
 
 
         ListView listView = (ListView) findViewById(R.id.list_item);
-        ItemListAdapter adapter = new ItemListAdapter(this, R.layout.row_itemview, itemList);
+        ItemListAdapter adapter = new ItemListAdapter(this, itemList);
 
         listView.setAdapter(adapter);
 
