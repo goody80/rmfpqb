@@ -40,9 +40,6 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
     List<MapPoint> mapPointList;
 
-
-    boolean isInitial = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,8 +93,7 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
         mv.setZoomLevel(GrevuContstants.ZOOM_LEVEL, true);
 
-        isInitial = true;
-
+        setPointByCategory(mv, 0);
     }
 
     @Override
@@ -261,5 +257,33 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
         mapView.setShowCurrentLocationMarker(isHide);
         mapView.removeAllCircles();
         mapView.moveCamera(CameraUpdateFactory.newMapPoint(mapPointList.get(0)));
+    }
+
+    /**
+     * 카테고리별 POI 획득
+     * */
+    private void setPointByCategory(MapView mapView, int categoryNumber) {
+
+        MapPOIItem[] curItems = new MapPOIItem[getDummyPoi().size()];
+
+        mapView.addPOIItems(getDummyPoi().toArray(curItems));
+    }
+
+    /**
+     * POI Dummy Data
+     * */
+    private List<MapPOIItem> getDummyPoi() {
+        List<MapPOIItem> poiItemList = new ArrayList<MapPOIItem>();
+
+        MapPOIItem mapPOIItem = new MapPOIItem();
+        mapPOIItem.setItemName("봉평 메밀국수");
+        mapPOIItem.setTag(222);
+        mapPOIItem.setMapPoint(MapPoint.mapPointWithGeoCoord(37.5209864, 126.8907643));
+        mapPOIItem.setMarkerType(MapPOIItem.MarkerType.YellowPin);
+        mapPOIItem.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin);
+
+        poiItemList.add(mapPOIItem);
+
+        return poiItemList;
     }
 }
