@@ -27,7 +27,7 @@ public class ItemView extends LinearLayout {
         init();
     }
 
-    public void init() {
+    public void init(){
         Random rnd = new Random();
         int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
         setBackgroundColor(color);

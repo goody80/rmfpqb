@@ -3,5 +3,6 @@
 
     <color name="white">#ffffff</color>
     <color name="black_overlay">#66000000</color>
+    <color name="icon">#f5235e</color>
 
 </resources>
