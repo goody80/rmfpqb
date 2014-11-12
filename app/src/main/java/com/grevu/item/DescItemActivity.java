@@ -18,8 +18,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 public class DescItemActivity extends Activity {
 
     private ScrollView menuLayout;
-    private ImageView menuImg1, menuImg2;
-    private TextView btn_pay;
+    private ImageView mMenuImg1, mMenuImg2;
+    private TextView mBtnPay;
     private CustomEditTextDialog mCustomEditTextDialog;
 
     @Override
@@ -30,15 +30,15 @@ public class DescItemActivity extends Activity {
 
         menuLayout = (ScrollView) findViewById(R.id.menu_food);
 
-        menuImg1 = (ImageView) menuLayout.findViewById(R.id.image_menu1);
-        menuImg2 = (ImageView) menuLayout.findViewById(R.id.image_menu2);
+        mMenuImg1 = (ImageView) menuLayout.findViewById(R.id.image_menu1);
+        mMenuImg2 = (ImageView) menuLayout.findViewById(R.id.image_menu2);
 
-        btn_pay = (TextView) findViewById(R.id.btn_pay);
+        mBtnPay = (TextView) findViewById(R.id.btn_pay);
 
-        ImageLoader.getInstance().displayImage("http://121.189.39.226/source_food_01.jpg", menuImg1);
-        ImageLoader.getInstance().displayImage("http://121.189.39.226/source_food_02.jpg", menuImg2);
+        ImageLoader.getInstance().displayImage("http://121.189.39.226/source_food_01.jpg", mMenuImg1);
+        ImageLoader.getInstance().displayImage("http://121.189.39.226/source_food_02.jpg", mMenuImg2);
 
-        btn_pay.setOnClickListener(new View.OnClickListener() {
+        mBtnPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // custom dialog

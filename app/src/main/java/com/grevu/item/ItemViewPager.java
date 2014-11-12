@@ -12,8 +12,8 @@ public class ItemViewPager extends ViewPager {
 
     private static final String TAG = "ItemViewPager";
 
-    private ItemViewPagerAdapter pagerAdapter;
-    private int listPosition = 0;
+    private ItemViewPagerAdapter mPagerAdapter;
+    private int mListPosition = 0;
 
     public ItemViewPager(Context context) {
         super(context);
@@ -26,17 +26,17 @@ public class ItemViewPager extends ViewPager {
     }
 
     public void init(Context context) {
-        pagerAdapter = new ItemViewPagerAdapter(context);
-        setAdapter(pagerAdapter);
+        mPagerAdapter = new ItemViewPagerAdapter(context);
+        setAdapter(mPagerAdapter);
     }
 
     // list의 position 정보 set,get
-    public void setListPosition(int listPosition) {
-        this.listPosition = listPosition;
+    public void setmListPosition(int mListPosition) {
+        this.mListPosition = mListPosition;
     }
 
-    public int getListPosition() {
-        return listPosition;
+    public int getmListPosition() {
+        return mListPosition;
     }
 
 }

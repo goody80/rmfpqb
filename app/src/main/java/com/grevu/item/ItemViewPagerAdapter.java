@@ -32,18 +32,18 @@ public class ItemViewPagerAdapter extends PagerAdapter {
             , "http://121.189.39.226/store_list_sample_03.png", "http://121.189.39.226/store_list_sample_04.png", "http://121.189.39.226/store_list_sample_05.png"
             , "http://121.189.39.226/store_list_sample_06.png", "http://121.189.39.226/store_list_sample_07.png", "http://121.189.39.226/store_list_sample_08.png"};
 
-    private final String[] names = {"양남식육식당", "엘파소", "숯불한판", "고기야", "비어뱅뱅", "너도꼼장어", "Coffee Smite", "아우네 김치찌개"};
-    private final String[] dists = {"4M", "6M", "7M", "10M", "10M", "11M", "12M", "15M"};
+    private final String[] sNames = {"양남식육식당", "엘파소", "숯불한판", "고기야", "비어뱅뱅", "너도꼼장어", "Coffee Smite", "아우네 김치찌개"};
+    private final String[] sDists = {"4M", "6M", "7M", "10M", "10M", "11M", "12M", "15M"};
 
-    private Context context;
-    private LayoutInflater inflater;
-    private DisplayImageOptions options;
+    private Context mContext;
+    private LayoutInflater mInflater;
+    private DisplayImageOptions mOptions;
 
-    ItemViewPagerAdapter(Context context) {
-        this.context = context;
-        inflater = LayoutInflater.from(context);
+    ItemViewPagerAdapter(Context mContext) {
+        this.mContext = mContext;
+        mInflater = LayoutInflater.from(mContext);
 
-        options = new DisplayImageOptions.Builder()
+        mOptions = new DisplayImageOptions.Builder()
 //                .showImageForEmptyUri(R.drawable.ic_empty)
 //                .showImageOnFail(R.drawable.ic_error)
                 .resetViewBeforeLoading(true)
@@ -67,7 +67,7 @@ public class ItemViewPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(final ViewGroup view, int position) {
-        FrameLayout imageLayout = (FrameLayout) inflater.inflate(R.layout.item_pager_image, view, false);
+        FrameLayout imageLayout = (FrameLayout) mInflater.inflate(R.layout.item_pager_image, view, false);
         assert imageLayout != null;
         ImageView imageView = (ImageView) imageLayout.findViewById(R.id.image);
         TextView storeName = (TextView) imageLayout.findViewById(R.id.store_name);
@@ -75,7 +75,7 @@ public class ItemViewPagerAdapter extends PagerAdapter {
 
         final ProgressBar spinner = (ProgressBar) imageLayout.findViewById(R.id.loading);
 
-        ImageLoader.getInstance().displayImage(sDrawableUrls[position], imageView, options, new SimpleImageLoadingListener() {
+        ImageLoader.getInstance().displayImage(sDrawableUrls[position], imageView, mOptions, new SimpleImageLoadingListener() {
             @Override
             public void onLoadingStarted(String imageUri, View view) {
                 spinner.setVisibility(View.VISIBLE);
@@ -101,7 +101,7 @@ public class ItemViewPagerAdapter extends PagerAdapter {
                         message = "Unknown error";
                         break;
                 }
-                Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
 
                 spinner.setVisibility(View.GONE);
             }
@@ -112,20 +112,20 @@ public class ItemViewPagerAdapter extends PagerAdapter {
             }
         });
 
-        final int storeIndex = ((ItemViewPager)view).getListPosition();
+        final int storeIndex = ((ItemViewPager)view).getmListPosition();
 
-        storeName.setText(names[storeIndex]);
-        storeDist.setText(dists[storeIndex]);
+        storeName.setText(sNames[storeIndex]);
+        storeDist.setText(sDists[storeIndex]);
 
         view.addView(imageLayout, 0);
 
         imageLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, DescItemActivity.class);
+                Intent intent = new Intent(mContext, DescItemActivity.class);
                 //container(ItemViewPager)에서 listPosition get
                 intent.putExtra("index", String.valueOf(storeIndex));
-                context.startActivity(intent);
+                mContext.startActivity(intent);
             }
         });
         return imageLayout;
