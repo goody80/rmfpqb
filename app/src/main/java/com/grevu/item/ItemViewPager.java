@@ -17,16 +17,16 @@ public class ItemViewPager extends ViewPager {
 
     public ItemViewPager(Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public ItemViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context);
     }
 
-    public void init() {
-        pagerAdapter = new ItemViewPagerAdapter();
+    public void init(Context context) {
+        pagerAdapter = new ItemViewPagerAdapter(context);
         setAdapter(pagerAdapter);
     }
 

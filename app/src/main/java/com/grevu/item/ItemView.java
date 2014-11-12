@@ -1,8 +1,15 @@
 package com.grevu.item;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
 import java.util.Random;
 
@@ -11,6 +18,8 @@ import java.util.Random;
  * Created by jhkim on 2014-10-27.
  */
 public class ItemView extends LinearLayout {
+
+    private DisplayImageOptions options;
 
     public ItemView(Context context) {
         super(context);
@@ -27,10 +36,9 @@ public class ItemView extends LinearLayout {
         init();
     }
 
-    public void init(){
-        Random rnd = new Random();
-        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
-        setBackgroundColor(color);
+    public void init() {
+
+
     }
 
 }

@@ -16,4 +16,6 @@
     <string name="title_cancel">취소</string>
     <string name="title_activity_poi_result">PoiResultActivity</string>
 
+    <string name="descr_image">Image</string>
+
 </resources>

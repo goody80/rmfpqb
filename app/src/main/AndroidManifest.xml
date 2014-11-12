@@ -44,7 +44,8 @@
             android:theme="@style/noAnimTheme" />
         <activity
             android:name="com.grevu.item.DescItemActivity"
-            android:theme="@style/noAnimTheme" />
+            android:theme="@style/noAnimTheme"
+            android:windowSoftInputMode="adjustResize"/>
 
         <!-- 지도 -->
         <activity

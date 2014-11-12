@@ -2,13 +2,12 @@
 
 <com.grevu.item.ItemView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
+    <ImageView
         android:id="@+id/row_item"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:gravity="center"
-        android:text="SHOP" />
+        android:scaleType="fitXY" />
 </com.grevu.item.ItemView>
