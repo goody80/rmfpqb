@@ -13,7 +13,7 @@ public class LoginActivity extends FragmentActivity {
 
     private static final String TAG = "LoginActivity";
 
-    private FacebookFragment facebookFragment;
+    private FacebookFragment mFBFragment;
     private ImageView btn_twitter;
     private ImageView btn_grevu;
 
@@ -24,14 +24,14 @@ public class LoginActivity extends FragmentActivity {
 
         if (savedInstanceState == null) {
             // Add the fragment on initial activity setup
-            facebookFragment = new FacebookFragment();
+            mFBFragment = new FacebookFragment();
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(android.R.id.content, facebookFragment)
+                    .add(android.R.id.content, mFBFragment)
                     .commit();
         } else {
             // Or set the fragment from restored state info
-            facebookFragment = (FacebookFragment) getSupportFragmentManager()
+            mFBFragment = (FacebookFragment) getSupportFragmentManager()
                     .findFragmentById(android.R.id.content);
         }
 

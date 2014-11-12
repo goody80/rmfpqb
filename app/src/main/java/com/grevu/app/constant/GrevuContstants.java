@@ -29,4 +29,9 @@ public class GrevuContstants {
 
         public static final int RADIUS = 500;
     }
+
+    public static final class SERVER_INFO {
+        public static final String DOMAIN = "http://121.189.39.226";
+        public static final String URI_LOCATION_INFO = "/data/location_info.txt";
+    }
 }

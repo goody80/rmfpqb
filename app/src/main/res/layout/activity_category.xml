@@ -16,12 +16,14 @@
             android:layout_gravity="right"
             android:background="@drawable/category_myinfo" />
 
+        <!--
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="80dp"
             android:background="@drawable/category_logo" />
+            -->
     </FrameLayout>
 
 
@@ -29,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="220dp"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 

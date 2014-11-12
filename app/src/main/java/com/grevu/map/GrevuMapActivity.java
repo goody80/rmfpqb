@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.grevu.app.R;
 import com.grevu.app.constant.GrevuContstants;
+import com.grevu.app.data.PoiData;
 import com.grevu.app.util.Logger;
 import com.grevu.item.ItemListActivity;
 
@@ -27,7 +28,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GrevuMapActivity extends Activity implements View.OnClickListener, MapView.MapViewEventListener, MapView.CurrentLocationEventListener, MapView.POIItemEventListener {
+public class GrevuMapActivity extends Activity implements View.OnClickListener, MapView.MapViewEventListener, MapView.CurrentLocationEventListener, MapView.POIItemEventListener, OnLocationInfoListener {
     MapView mMapView;
     MapPointBounds mMapPointBounds;
 
@@ -40,12 +41,21 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
     List<MapPoint> mapPointList;
 
+    LocationInfoAsyncTask locationInfoAsyncTask;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+        Intent intent = getIntent();
+
+        String selectedCategory = intent.getStringExtra("cate");
+
+        if (selectedCategory == null) selectedCategory = "01";
+
         setContentView(R.layout.activity_grevu_map);
+
         mMapView = new MapView(this);
         mMapView.setDaumMapApiKey(GrevuContstants.DAUM_API_KEY);
         mMapView.setMapViewEventListener(this);
@@ -61,6 +71,11 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 		btnCompletePoi.setOnClickListener(this);
 
         mapPointList = new ArrayList<MapPoint>();
+
+        locationInfoAsyncTask = new LocationInfoAsyncTask();
+        locationInfoAsyncTask.setContext(this);
+        locationInfoAsyncTask.setOnLocationInfoListener(this);
+        locationInfoAsyncTask.execute(selectedCategory, GrevuContstants.SERVER_INFO.DOMAIN + GrevuContstants.SERVER_INFO.URI_LOCATION_INFO);
     }
 
     @Override
@@ -93,7 +108,7 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
         mv.setZoomLevel(GrevuContstants.ZOOM_LEVEL, true);
 
-        setPointByCategory(mv, 0);
+        //setPointByCategory(mv, 0);
     }
 
     @Override
@@ -212,6 +227,13 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
         }
     }
 
+    @Override
+    public void onLocationInfoReceived(List<MapPOIItem> mapPOIItemList) {
+        if (mapPOIItemList != null) {
+            setPointByCategory(mMapView, mapPOIItemList);
+        }
+    }
+
     /**
      * Convert GeoCoord to MapPoint
      * */
@@ -267,6 +289,13 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
         MapPOIItem[] curItems = new MapPOIItem[getDummyPoi().size()];
 
         mapView.addPOIItems(getDummyPoi().toArray(curItems));
+    }
+
+    private void setPointByCategory(MapView mapView, List<MapPOIItem> itemList) {
+
+        MapPOIItem[] curItems = new MapPOIItem[itemList.size()];
+
+        mapView.addPOIItems(itemList.toArray(curItems));
     }
 
     /**

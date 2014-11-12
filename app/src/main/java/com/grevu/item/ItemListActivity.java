@@ -19,7 +19,7 @@ import java.util.Random;
  */
 public class ItemListActivity extends Activity {
 
-    private ArrayList<ItemData> itemList;
+    private ArrayList<ItemData> mItemList;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class ItemListActivity extends Activity {
 
         setContentView(R.layout.activity_item);
 
-        itemList = new ArrayList<ItemData>();
+        mItemList = new ArrayList<ItemData>();
 
         ///////////테스트 데이터 생성//////////////
         ItemData data1 = new ItemData();
@@ -38,13 +38,13 @@ public class ItemListActivity extends Activity {
 
         Random generator = new Random();
         for (int i = 0; i < 7; i++) {
-            itemList.add(i, (generator.nextInt(2) == 0) ? data1 : data2);
+            mItemList.add(i, (generator.nextInt(2) == 0) ? data1 : data2);
         }
         ///////////테스트 데이터 생성//////////////
 
 
         ListView listView = (ListView) findViewById(R.id.list_item);
-        ItemListAdapter adapter = new ItemListAdapter(this, itemList);
+        ItemListAdapter adapter = new ItemListAdapter(this, mItemList);
 
         listView.setAdapter(adapter);
 

@@ -19,10 +19,9 @@ public class JsonUtil {
      * @param json
      * */
     public static PoiData[] parsePoiItem(String selectedCategory, String json) throws JSONException {
+        JSONObject poiResult = new JSONObject(json);
 
-        JSONArray jsonArray = new JSONArray(json);
-
-        PoiData[] poiDataArr = new PoiData[jsonArray.length()];
+        JSONArray jsonArray = poiResult.getJSONArray("cateList");   //new JSONArray(json);
 
         for (int i=0;i < jsonArray.length(); i++) {
             JSONObject jsonObject = jsonArray.getJSONObject(i);
@@ -31,11 +30,14 @@ public class JsonUtil {
             String storeCate = jsonObject.getString("storeCate");
 
             if (selectedCategory.equals(storeCate)) {
+
                 JSONArray storeList = jsonObject.getJSONArray("storeList");
 
-                PoiData curPoiData = new PoiData();
+                PoiData[] poiDataArr = new PoiData[storeList.length()];
 
                 for (int j=0; j < storeList.length(); j++) {
+                    PoiData curPoiData = new PoiData();
+
                     JSONObject storeObject = storeList.getJSONObject(j);
 
                     String storeName = storeObject.getString("storeName");
@@ -47,11 +49,14 @@ public class JsonUtil {
                     curPoiData.storeTag = storeTag;
                     curPoiData.storeLatitude = latitude;
                     curPoiData.storeLongitude = longitude;
+
+                    Logger.d("storeName : " + curPoiData.storeName + ", storeTag : " + curPoiData.storeTag + ", latitude : " + curPoiData.storeLatitude + ", longitude : " + curPoiData.storeLongitude);
+                    poiDataArr[j] = curPoiData;
                 }
 
-                poiDataArr[i] = curPoiData;
+                return poiDataArr;
             }
         }
-        return poiDataArr;
+        return null;
     }
 }

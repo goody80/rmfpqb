@@ -12,31 +12,31 @@ public class ItemViewPager extends ViewPager {
 
     private static final String TAG = "ItemViewPager";
 
-    private ItemViewPagerAdapter pagerAdapter;
-    private int listPosition = 0;
+    private ItemViewPagerAdapter mPagerAdapter;
+    private int mListPosition = 0;
 
     public ItemViewPager(Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public ItemViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context);
     }
 
-    public void init() {
-        pagerAdapter = new ItemViewPagerAdapter();
-        setAdapter(pagerAdapter);
+    public void init(Context context) {
+        mPagerAdapter = new ItemViewPagerAdapter(context);
+        setAdapter(mPagerAdapter);
     }
 
     // list의 position 정보 set,get
-    public void setListPosition(int listPosition) {
-        this.listPosition = listPosition;
+    public void setmListPosition(int mListPosition) {
+        this.mListPosition = mListPosition;
     }
 
-    public int getListPosition() {
-        return listPosition;
+    public int getmListPosition() {
+        return mListPosition;
     }
 
 }
