@@ -45,13 +45,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
             android:text="연락처 : 010-0000-0000" />
 
         <include
             android:id="@+id/menu_food"
             layout="@layout/food_menu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="400dp" />
     </LinearLayout>
 
     <FrameLayout
@@ -90,6 +91,7 @@
                 android:id="@+id/btn_pay"
                 android:layout_width="45dp"
                 android:layout_height="30dp"
+                android:layout_centerVertical="true"
                 android:layout_toRightOf="@id/food_price"
                 android:background="@color/grevu"
                 android:gravity="center"

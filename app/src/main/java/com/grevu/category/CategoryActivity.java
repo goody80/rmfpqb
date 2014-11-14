@@ -38,6 +38,7 @@ public class CategoryActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
+                intent.putExtra("cate", "01");
                 startActivity(intent);
             }
         });
@@ -46,6 +47,7 @@ public class CategoryActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
+                intent.putExtra("cate", "02");
                 startActivity(intent);
             }
         });
@@ -54,31 +56,35 @@ public class CategoryActivity extends Activity {
             @Override
             public void onClick(View view) {
                 //temparary fb logout
-                Session.openActiveSession(CategoryActivity.this, true, new Session.StatusCallback() {
-                    @Override
-                    public void call(final Session session, final SessionState state, Exception exception) {
-                        Log.i(TAG, session.toString());
-                        if (session.isOpened()) {
-                            Request.executeMeRequestAsync(session, new Request.GraphUserCallback() {
-                                @Override
-                                public void onCompleted(GraphUser user, Response response) {
-                                    if (user != null) {
-                                        try {
-                                            session.close();
-                                            session.closeAndClearTokenInformation();
+//                Session.openActiveSession(CategoryActivity.this, true, new Session.StatusCallback() {
+//                    @Override
+//                    public void call(final Session session, final SessionState state, Exception exception) {
+//                        Log.i(TAG, session.toString());
+//                        if (session.isOpened()) {
+//                            Request.executeMeRequestAsync(session, new Request.GraphUserCallback() {
+//                                @Override
+//                                public void onCompleted(GraphUser user, Response response) {
+//                                    if (user != null) {
+//                                        try {
+//                                            session.close();
+//                                            session.closeAndClearTokenInformation();
+//
+//                                            Intent intent = new Intent(CategoryActivity.this, LoginActivity.class);
+//                                            finish();
+//                                            startActivity(intent);
+//                                        } catch (Exception e) {
+//                                            e.printStackTrace();
+//                                        }
+//                                    }
+//                                }
+//                            });
+//                        }
+//                    }
+//                });
 
-                                            Intent intent = new Intent(CategoryActivity.this, LoginActivity.class);
-                                            finish();
-                                            startActivity(intent);
-                                        } catch (Exception e) {
-                                            e.printStackTrace();
-                                        }
-                                    }
-                                }
-                            });
-                        }
-                    }
-                });
+                Intent intent = new Intent(CategoryActivity.this, GrevuMapActivity.class);
+                intent.putExtra("cate", "03");
+                startActivity(intent);
             }
         });
 
