@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 21
+    buildToolsVersion '20.0.0'
 
     defaultConfig {
         applicationId "com.grevu.app"
         minSdkVersion 16
-        targetSdkVersion 20
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
@@ -21,10 +21,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':facebookSDK')
     compile project(':twitter4j-core-4.0.2')
-    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.android.support:support-v4:21+'
+    compile 'com.android.support:appcompat-v7:21.+'
     compile files('libs/libDaumMapAndroid.jar')
     compile files('libs/google-http-client-1.17.0-rc.jar')
     compile files('libs/google-http-client-android-1.17.0-rc.jar')

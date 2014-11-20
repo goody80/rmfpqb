@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -69,6 +70,7 @@ public class ItemViewPagerAdapter extends PagerAdapter {
     public Object instantiateItem(final ViewGroup view, int position) {
         FrameLayout imageLayout = (FrameLayout) mInflater.inflate(R.layout.item_pager_image, view, false);
         assert imageLayout != null;
+        final ImageButton pickFood = (ImageButton) imageLayout.findViewById(R.id.pick_food);
         ImageView imageView = (ImageView) imageLayout.findViewById(R.id.image);
         TextView storeName = (TextView) imageLayout.findViewById(R.id.store_name);
         TextView storeDist = (TextView) imageLayout.findViewById(R.id.store_distance);
@@ -116,6 +118,19 @@ public class ItemViewPagerAdapter extends PagerAdapter {
 
         storeName.setText(sNames[storeIndex]);
         storeDist.setText(sDists[storeIndex]);
+
+        pickFood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(v.isSelected()){
+                    v.setSelected(false);
+                }else{
+                    v.setSelected(true);
+                }
+
+                v.setBackgroundResource(R.drawable.pickonoff);
+            }
+        });
 
         view.addView(imageLayout, 0);
 

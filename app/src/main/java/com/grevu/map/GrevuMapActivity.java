@@ -43,6 +43,8 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
     LocationInfoAsyncTask locationInfoAsyncTask;
 
+    private String selectedCategory;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +52,7 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
 
         Intent intent = getIntent();
 
-        String selectedCategory = intent.getStringExtra("cate");
+        selectedCategory = intent.getStringExtra("cate");
 
         if (selectedCategory == null) selectedCategory = "01";
 
@@ -221,6 +223,7 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
                 //move to category activity
                 Intent intent = new Intent(this, ItemListActivity.class);
 
+                intent.putExtra("cate", selectedCategory);
                 startActivity(intent);
 			    break;
 
