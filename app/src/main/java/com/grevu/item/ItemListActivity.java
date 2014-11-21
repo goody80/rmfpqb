@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.grevu.app.R;
 import com.grevu.app.data.ItemData;
+import com.grevu.map.GrevuMapActivity;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -20,12 +22,29 @@ import java.util.Random;
 public class ItemListActivity extends Activity {
 
     private ArrayList<ItemData> mItemList;
+    private TextView mBtnMap;
+    private String selectedCategory;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_item);
+
+        // startActivityForResult 로 변경 예정
+        Intent intent = getIntent();
+        selectedCategory = intent.getStringExtra("cate");
+        if (selectedCategory == null) selectedCategory = "01";
+
+        mBtnMap = (TextView) findViewById(R.id.btn_map);
+        mBtnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ItemListActivity.this, GrevuMapActivity.class);
+                intent.putExtra("cate", selectedCategory);
+                startActivity(intent);
+            }
+        });
 
         mItemList = new ArrayList<ItemData>();
 
