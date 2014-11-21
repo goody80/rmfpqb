@@ -7,13 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.grevu.app.R;
 import com.grevu.app.constant.GrevuContstants;
-import com.grevu.app.data.PoiData;
 import com.grevu.app.util.Logger;
 import com.grevu.item.ItemListActivity;
+import com.grevu.map.MapUser.CustomHorizontalListView;
+import com.grevu.map.MapUser.UserInfo;
 
 import net.daum.mf.map.api.CameraUpdateFactory;
 import net.daum.mf.map.api.MapCircle;
@@ -39,6 +42,8 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
     Button btnCancel;
     Button btnCompletePoi;
 
+    CustomHorizontalListView mUserListView;
+
     List<MapPoint> mapPointList;
 
     LocationInfoAsyncTask locationInfoAsyncTask;
@@ -57,6 +62,9 @@ public class GrevuMapActivity extends Activity implements View.OnClickListener, 
         if (selectedCategory == null) selectedCategory = "01";
 
         setContentView(R.layout.activity_grevu_map);
+
+        //mUserListView = (CustomHorizontalListView) findViewById(R.id.customHorizontalListView);
+        //mUserListView.setAdapter(new ArrayAdapter<UserInfo>());
 
         mMapView = new MapView(this);
         mMapView.setDaumMapApiKey(GrevuContstants.DAUM_API_KEY);
